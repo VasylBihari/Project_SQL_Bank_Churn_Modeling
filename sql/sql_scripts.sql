@@ -24,4 +24,26 @@ SELECT *
 FROM bank_churn
 LIMIT 5;
 
-/**/
+/*Перевіряю чи є пропущені дані*/
+SELECT 
+    COUNT(*) AS total_rows,
+    COUNT(*) - COUNT(CustomerId) AS missing_customer_id,
+    COUNT(*) - COUNT(Surname) AS missing_surname,
+    COUNT(*) - COUNT(CreditScore) AS missing_credit_score,
+    COUNT(*) - COUNT(Geography) AS missing_geography,
+    COUNT(*) - COUNT(Gender) AS missing_gender,
+    COUNT(*) - COUNT(Age) AS missing_age,
+    COUNT(*) - COUNT(Tenure) AS missing_tenure,
+    COUNT(*) - COUNT(Balance) AS missing_balance,
+    COUNT(*) - COUNT(NumOfProducts) AS missing_num_of_products,
+    COUNT(*) - COUNT(HasCrCard) AS missing_has_cr_card,
+    COUNT(*) - COUNT(IsActiveMember) AS missing_is_active_member,
+    COUNT(*) - COUNT(EstimatedSalary) AS missing_estimated_salary,
+    COUNT(*) - COUNT(Exited) AS missing_exited
+FROM bank_churn;
+
+-- Перевіряю чи є дублікати за CustomerId
+SELECT CustomerId, COUNT(*) 
+FROM bank_churn 
+GROUP BY CustomerId 
+HAVING COUNT(*) > 1;
