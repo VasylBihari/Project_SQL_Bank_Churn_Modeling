@@ -47,3 +47,15 @@ SELECT CustomerId, COUNT(*)
 FROM bank_churn 
 GROUP BY CustomerId 
 HAVING COUNT(*) > 1;
+
+--розподіл клієнтів за віковою групою
+SELECT 
+	COUNT(*),
+	CASE 
+		WHEN age <= 25 THEN '<25'
+		WHEN age >25 and age<=45 THEN '25-45'
+		WHEN age > 45 and age<=60 THEN '46-60'
+		ELSE '>60'
+	END as age_group
+FROM bank_churn
+GROUP BY age_group;
