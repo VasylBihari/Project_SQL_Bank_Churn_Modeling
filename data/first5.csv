@@ -1,0 +1,6 @@
+"customerid","surname","creditscore","geography","gender","age","tenure","balance","numofproducts","hascrcard","isactivemember","estimatedsalary","exited"
+15634602,"Hargrave",619,"France","Female",42,2,"0.00",1,True,True,"101348.88",True
+15647311,"Hill",608,"Spain","Female",41,1,"83807.86",1,False,True,"112542.58",False
+15619304,"Onio",502,"France","Female",42,8,"159660.80",3,True,False,"113931.57",True
+15701354,"Boni",699,"France","Female",39,1,"0.00",2,False,False,"93826.63",False
+15737888,"Mitchell",850,"Spain","Female",43,2,"125510.82",1,True,True,"79084.10",False
