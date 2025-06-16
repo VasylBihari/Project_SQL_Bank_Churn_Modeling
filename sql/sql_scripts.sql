@@ -48,14 +48,19 @@ FROM bank_churn
 GROUP BY CustomerId 
 HAVING COUNT(*) > 1;
 
---розподіл клієнтів за віковою групою
+--розподіл клієнтів за віковою групою та частка клієнтів кожної групи, що покинули банк
 SELECT 
-	COUNT(*),
 	CASE 
 		WHEN age <= 25 THEN '<25'
 		WHEN age >25 and age<=45 THEN '25-45'
 		WHEN age > 45 and age<=60 THEN '46-60'
 		ELSE '>60'
-	END as age_group
+	END as age_group,
+	COUNT (*) as total_count,
+	COUNT(CASE WHEN Exited = true THEN 1 END) as exited_count,
+	ROUND((SUM(CASE WHEN Exited = true THEN 1 ELSE 0 END) * 100.0 / COUNT(*)),2) as churn_rate_percentage
 FROM bank_churn
-GROUP BY age_group;
+GROUP BY age_group
+ORDER BY churn_rate_percentage DESC;
+
+
