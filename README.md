@@ -20,5 +20,5 @@
 - **СУБД**: PostgreSQL.
 - 
 ### Результати аналізу
- **SQL скрипти**: [SQL](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/sql/sql_scripts.sql)
- **CHARTS**:[CHATRS](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/tree/main/charts)
+- **SQL скрипти**: [SQL](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/sql/sql_scripts.sql) 
+-  **CHARTS**:[CHATRS](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/tree/main/charts)
