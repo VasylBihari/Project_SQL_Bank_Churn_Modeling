@@ -13,7 +13,7 @@
 
 ### Набір даних
 - **Джерело даних**: [Kaggle](https://www.kaggle.com/datasets/shivan118/churn-modeling-dataset).
-- **Датасет**: [CSV-файл](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/tree/main/data)
+- **Датасет**: [CSV-файл]([https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/tree/main/data](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/data/Churn_Modelling.csv))
 
 ### Використані інструменти
 - **SQL**: Для обробки, очищення, агрегації та аналізу даних.
