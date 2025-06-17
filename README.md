@@ -24,4 +24,4 @@
 - **SQL скрипти**:  [SQL](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/sql/sql_scripts.sql) 
 - **Dashboard**:
 
-         [Dashboard](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/dashboard/Dashboard_screenshot.png)
+         ![Dashboard](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/dashboard/Dashboard_screenshot.png)
