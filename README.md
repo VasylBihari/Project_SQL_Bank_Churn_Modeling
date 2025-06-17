@@ -8,8 +8,7 @@
 ### Цілі проекту
 - Провести дослідницький аналіз даних (EDA) для розуміння структури даних
 - Продемонструвати використання SQL для обробки, агрегації та аналізу даних ( [SQL](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/sql/sql_scripts.sql) )
-- Продемонструвати візуалізацію даних з допомогою PostgreSQL ([CHATRS](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/tree/main/charts))
-- Виявити основні фактори, що впливають на відтік клієнтів.
+- Створити дашборд в Excel з візуалізацією отриманих даних [Dashboard] (https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/tree/main/dashboard)
 - Надати рекомендації банку щодо зменшення відтоку клієнтів на основі отриманих інсайтів.
 
 ### Набір даних
@@ -17,9 +16,10 @@
 - **Датасет**: [CSV-файл](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/data/Churn_Modelling.csv)
 
 ### Використані інструменти
-- **SQL**: Для обробки, очищення, агрегації та аналізу даних.
-- **СУБД**: PostgreSQL.
+- **SQL**: Для обробки, очищення, агрегації та аналізу даних;
+- **СУБД**: PostgreSQL;
+- **Візуалізація**: Excel.
   
 ### Результати аналізу
 - **SQL скрипти**:  [SQL](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/sql/sql_scripts.sql) 
--  **CHARTS**: [CHATRS](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/tree/main/charts)
+- **Dashboard**: [Dashboard] (https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/tree/main/dashboard)
