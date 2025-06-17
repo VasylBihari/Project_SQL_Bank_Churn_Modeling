@@ -8,8 +8,7 @@
 ### Цілі проекту
 - Провести дослідницький аналіз даних (EDA) для розуміння структури даних
 - Продемонструвати використання SQL для обробки, агрегації та аналізу даних ( [SQL](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/sql/sql_scripts.sql) )
-- Створити дашборд в Excel з візуалізацією отриманих даних
-- Надати рекомендації банку щодо зменшення відтоку клієнтів на основі отриманих інсайтів.
+- Створити дашборд в Excel з візуалізацією отриманих даних.
 
 ### Набір даних
 - **Джерело даних**: [Kaggle](https://www.kaggle.com/datasets/shivan118/churn-modeling-dataset).
@@ -22,4 +21,5 @@
   
 ### Результати аналізу
 - **SQL скрипти**:  [SQL](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/sql/sql_scripts.sql) 
-- **Dashboard**: [Dashboard](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/dashboard/Dashboard_screenshot.png)
+- **Dashboard**:
+  [Dashboard](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/dashboard/Dashboard_screenshot.png)
