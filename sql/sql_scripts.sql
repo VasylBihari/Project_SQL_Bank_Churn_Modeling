@@ -1,4 +1,4 @@
-/*Створюю таблицю в PostgreSQL*/
+--Створюю таблицю в PostgreSQL
 
 CREATE TABLE bank_churn (
 	CustomerId INTEGER PRIMARY KEY,
@@ -16,10 +16,15 @@ CREATE TABLE bank_churn (
     Exited BOOLEAN
 );
 
-/*З допомогою опції Import/Export Data... імпортую CSV-файл у таблицю*/
+--З допомогою опції Import/Export Data... імпортую CSV-файл у таблицю
 
-/*Перевіряю чи таблиця створена і дані імпортовані.*/
 
+--Перевіряю назви колонок і їх тип
+SELECT column_name, data_type
+FROM information_schema.columns
+WHERE table_name = 'bank_churn';
+
+--Перевіряю чи таблиця створена і дані імпортовані
 SELECT * 
 FROM bank_churn
 LIMIT 5;
