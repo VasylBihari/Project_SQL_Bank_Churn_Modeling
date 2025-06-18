@@ -29,7 +29,23 @@ SELECT *
 FROM bank_churn
 LIMIT 5;
 
-/*Перевіряю чи є пропущені дані*/
+--Перевірка на коректність значень в числових стовпцях(чи логічні максимальне і мінімальне значення
+SELECT 
+	MAX(creditscore) as max_creditscore,
+	MIN (creditscore) as min_creditscore,
+	MAX (age) as max_age,
+	MIN (age) as min_age,
+	MAX (tenure) as max_tenure,
+	MIN (tenure) as min_tenure,
+	MAX (balance) as max_balance,
+	MIN (balance) as min_balance,
+	MAX (numofproducts) as max_numofproducts,
+	MIN (numofproducts) as min_numofproducts,
+	MAX (estimatedsalary) as max_nestimatedsalary,
+	MIN (estimatedsalary) as min_estimatedsalary
+FROM bank_churn;
+
+--Перевіряю чи є пропущені дані
 SELECT 
     COUNT(*) AS total_rows,
     COUNT(*) - COUNT(CustomerId) AS missing_customer_id,
