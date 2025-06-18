@@ -134,3 +134,14 @@ FROM (
 ) AS ranked_customers
 WHERE balance_rank<=5
 ORDER BY geography, balance_rank;
+
+-- Агрегація по країнам
+SELECT 
+    COALESCE(Geography, 'Total') AS geography,
+    COUNT(*) AS total_count,
+    ROUND(AVG(Exited::INTEGER) * 100, 2) AS churn_rate_percentage,
+    ROUND(AVG(Balance), 2) AS avg_balance,
+    ROUND(AVG(NumOfProducts), 2) AS avg_num_of_products
+FROM bank_churn
+GROUP BY ROLLUP(Geography)
+ORDER BY Geography IS NULL, Geography;
