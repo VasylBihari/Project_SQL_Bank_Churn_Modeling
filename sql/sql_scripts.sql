@@ -104,4 +104,13 @@ FROM bank_churn
 	GROUP BY geography
 	ORDER BY churn_rate_percentage DESC;
 
-
+--Аналіз впливу кількості продуктів на відтік
+SELECT 
+	numofproducts,
+	COUNT(*) AS total_count,
+	ROUND(AVG(exited::INTEGER)*100,2) as churn_rate_percentage,
+	count(case when exited = true then 1 end) as exited_count,
+	ROUND(AVG(estimatedsalary),2) as avg_salary
+FROM bank_churn
+GROUP BY numofproducts
+ORDER BY numofproducts DESC;
