@@ -114,3 +114,23 @@ SELECT
 FROM bank_churn
 GROUP BY numofproducts
 ORDER BY numofproducts DESC;
+
+--Ранжування клієнтів за балансом у межах кожної країни
+SELECT 
+	customerid, 
+	surname, 
+	geography, 
+	balance, 
+	balance_rank	
+FROM (
+	SELECT 
+		customerid,
+		surname, 
+		geography,
+		balance,
+		RANK() OVER (PARTITION BY Geography ORDER BY Balance DESC) as balance_rank
+	FROM bank_churn
+	WHERE balance > 0 
+) AS ranked_customers
+WHERE balance_rank<=5
+ORDER BY geography, balance_rank;
