@@ -84,15 +84,24 @@ FROM bank_churn
 GROUP BY age_group
 ORDER BY churn_rate_percentage DESC;
 
---Аналіз відтоку клієнтів за статтю та країною
+--Аналіз відтоку клієнтів за статтю
 SELECT 
-	geography,
 	gender,
 	COUNT(*) as total_count,
 	COUNT(CASE WHEN Exited = true THEN 1 END) as exited_count,
 	ROUND(AVG(Exited::INTEGER) * 100,2) as churn_rate_percentage
 FROM bank_churn
-	GROUP BY geography, gender
+	GROUP BY gender
+	ORDER BY churn_rate_percentage DESC;
+
+--Аналіз відтоку клієнтів за країною
+SELECT 
+	geography,
+	COUNT(*) as total_count,
+	COUNT(CASE WHEN Exited = true THEN 1 END) as exited_count,
+	ROUND(AVG(Exited::INTEGER) * 100,2) as churn_rate_percentage
+FROM bank_churn
+	GROUP BY geography
 	ORDER BY churn_rate_percentage DESC;
 
 
