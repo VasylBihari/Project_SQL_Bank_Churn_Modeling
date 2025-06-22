@@ -173,3 +173,17 @@ SELECT
 FROM bank_churn
 GROUP BY IsActiveMember
 ORDER BY churn_rate_percentage DESC;
+
+--Групую клієнтів за діапазонами кредитного рейтингу (для клієнтів групи з найбільшим відтоком банк може розробити програми підтримки)
+SELECT 
+    CASE 
+        WHEN CreditScore < 600 THEN '<600'
+        WHEN CreditScore <= 700 THEN '600-700'
+        ELSE '>700'
+    END AS credit_score_range,
+    COUNT(*) AS total_count,
+    ROUND(AVG(Exited::INTEGER) * 100, 2) AS churn_rate_percentage,
+    ROUND(AVG(Balance), 2) AS avg_balance
+FROM bank_churn
+GROUP BY credit_score_range
+ORDER BY churn_rate_percentage DESC;
