@@ -69,6 +69,13 @@ FROM bank_churn
 GROUP BY CustomerId 
 HAVING COUNT(*) > 1;
 
+--Підраховую кількість клієнтів, які пішли з банку
+SELECT 
+	COUNT(*) AS total_customers,
+	SUM (exited::INTEGER) AS total_exited,
+	ROUND(SUM(Exited::INTEGER) * 100.0 / COUNT(*), 2) AS churn_rate_percentage
+FROM bank_churn;
+
 --розподіл клієнтів за віковою групою та частка клієнтів кожної групи, що покинули банк
 SELECT 
 	CASE 
