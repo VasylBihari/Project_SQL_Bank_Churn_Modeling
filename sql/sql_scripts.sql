@@ -163,3 +163,13 @@ FROM bank_churn
 WHERE exited = false
 ORDER BY balance DESC
 LIMIT 5;
+
+--Рахую відсоток відтоку, середній баланс і кількість клієнтів за статусом активності
+SELECT 
+    IsActiveMember,
+    COUNT(*) AS total_count,
+    ROUND(AVG(Exited::INTEGER) * 100, 2) AS churn_rate_percentage,
+    ROUND(AVG(Balance), 2) AS avg_balance
+FROM bank_churn
+GROUP BY IsActiveMember
+ORDER BY churn_rate_percentage DESC;
