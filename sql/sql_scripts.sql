@@ -152,3 +152,14 @@ SELECT
 FROM bank_churn
 GROUP BY ROLLUP(Geography)
 ORDER BY Geography IS NULL, Geography;
+
+--top-5 клієнтів з найбільшим балансом, які ще не покинули банк (exited = false)((щоб запропонувати їм лояльні умови і зберегти як клієнтів банку))
+SELECT
+	customerid,
+	surname,
+	balance,
+	exited
+FROM bank_churn
+WHERE exited = false
+ORDER BY balance DESC
+LIMIT 5;
