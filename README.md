@@ -8,7 +8,7 @@
 ### Цілі проекту
 - Провести дослідницький аналіз даних (EDA) для розуміння структури даних
 - Продемонструвати використання SQL для обробки, агрегації та аналізу даних ( [SQL](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/sql/sql_scripts.sql) )
-- Створити дашборд в Excel з візуалізацією отриманих даних.
+- Створити дашборд в Google Sheets з візуалізацією отриманих даних.
 
 ### Набір даних
 - **Джерело даних**: [Kaggle](https://www.kaggle.com/datasets/shivan118/churn-modeling-dataset).
@@ -17,7 +17,7 @@
 ### Використані інструменти
 - **SQL**: Для обробки, очищення, агрегації та аналізу даних;
 - **СУБД**: PostgreSQL;
-- **Візуалізація**: Excel.
+- **Візуалізація**: Google Sheets.
   
 ### Результати аналізу
 - **SQL скрипти**:  [SQL](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/sql/sql_scripts.sql) 
