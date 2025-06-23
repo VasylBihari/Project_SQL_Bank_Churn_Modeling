@@ -187,3 +187,20 @@ SELECT
 FROM bank_churn
 GROUP BY credit_score_range
 ORDER BY churn_rate_percentage DESC;
+
+
+--підраховую загальну суму балансу на початок звітного періоду і суму балансу клієнтів, які пішли з банку, і в % співвідношенні
+WITH exited_balance AS (
+    SELECT SUM(balance) AS exited_balance
+    FROM bank_churn
+    WHERE exited = true
+)
+SELECT 
+    SUM(balance) AS total_balance,
+    (SELECT exited_balance FROM exited_balance) AS exited_balance,
+    ROUND(
+        (SELECT exited_balance FROM exited_balance) * 100.0 / 
+        NULLIF(SUM(balance), 0), 
+        2
+    ) AS percent_balance
+FROM bank_churn;
