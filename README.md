@@ -1,27 +1,27 @@
-## Аналіз відтоку клієнтів банку за допомогою SQL
+## Analyzing bank customer churn using SQL
 
-### Опис проекту
-Цей проект присвячений аналізу відтоку клієнтів банку на основі набору даних, що містить детальну інформацію про клієнтів, таку як демографічні дані, фінансові показники та поведінкові характеристики. 
-Цільова змінна є двійковою і вказує, чи залишив клієнт банк (закрив рахунок), чи залишився активним клієнтом. 
-Увесь аналіз виконано за допомогою SQL для виявлення ключових факторів, що впливають на відтік, та створення цінних бізнес-інсайтів.
+### Project Description
+This project is dedicated to analyzing bank customer churn based on a dataset containing detailed customer information such as demographics, financials, and behavioral characteristics.
+The target variable is binary and indicates whether the customer left the bank (closed the account) or remained an active customer.
+All analysis was performed using SQL to identify key factors influencing churn and generate valuable business insights.
 
-### Цілі проекту
-- Провести дослідницький аналіз даних (EDA) для розуміння структури даних
-- Продемонструвати використання SQL для обробки, агрегації та аналізу даних ( [SQL](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/sql/sql_scripts.sql) )
-- Створити дашборд в Google Sheets з візуалізацією отриманих даних [Dashboard](https://docs.google.com/spreadsheets/d/1naJDnQopu5NcWmKVYYdYg4hIfE12_DxDhzuTZibFxXE/edit?gid=2079650780#gid=2079650780)
+### Project Objectives
+- Conduct exploratory data analysis (EDA) to understand the data structure
+- Demonstrate the use of SQL for data processing, aggregation, and analysis ( [SQL](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/sql/sql_scripts.sql) )
+- Create a dashboard in Google Sheets with visualization of the received data [Dashboard](https://docs.google.com/spreadsheets/d/1naJDnQopu5NcWmKVYYdYg4hIfE12_DxDhzuTZibFxXE/edit?gid=2079650780#gid=2079650780)
 
-### Набір даних
-- **Джерело даних**: [Kaggle](https://www.kaggle.com/datasets/shivan118/churn-modeling-dataset).
-- **Датасет**: [CSV-файл](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/data/Churn_Modelling.csv)
+### Dataset
+- **Data source**: [Kaggle](https://www.kaggle.com/datasets/shivan118/churn-modeling-dataset).
+- **Dataset**: [CSV-файл](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/data/Churn_Modelling.csv)
 
-### Використані інструменти
-- **SQL**: Для обробки, очищення, агрегації та аналізу даних;
+### Tools
+- **SQL**: data processing, cleaning, aggregation and analysis;
 - **СУБД**: PostgreSQL;
-- **Excel**: для збереження отриманих даних з PostgreSQL
-- **Google Sheets**: для візуалізації отриманих даних, створення дашборду
+- **Excel**: saving the received data from PostgreSQL
+- **Google Sheets**: visualization of received data, creation of a dashboard
   
-### Результати аналізу
-- **SQL скрипти**:  [SQL](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/sql/sql_scripts.sql)
-- **Збереження отриманих даних з PostgreSQL** [data](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/tree/main/data)
+### Analysis results
+- **SQL scripts**:  [SQL](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/sql/sql_scripts.sql)
+- **Saving retrieved data from PostgreSQL** [data](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/tree/main/data)
 - **Dashboard**:
   [Dashboard](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/dashboard/Dashboard.jpg)
