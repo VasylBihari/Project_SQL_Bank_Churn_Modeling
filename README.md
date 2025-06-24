@@ -17,8 +17,8 @@
 ### Використані інструменти
 - **SQL**: Для обробки, очищення, агрегації та аналізу даних;
 - **СУБД**: PostgreSQL;
-- **CSV**: для збереження отриманих даних з PostgreSQL
-- **Візуалізація**: Google Sheets.
+- **Excel**: для збереження отриманих даних з PostgreSQL
+- **Google Sheets**: для візуалізації отриманих даних, створення дашборду
   
 ### Результати аналізу
 - **SQL скрипти**:  [SQL](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/sql/sql_scripts.sql)
