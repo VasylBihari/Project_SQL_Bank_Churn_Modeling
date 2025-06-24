@@ -17,9 +17,11 @@
 ### Використані інструменти
 - **SQL**: Для обробки, очищення, агрегації та аналізу даних;
 - **СУБД**: PostgreSQL;
+- **CSV**: для збереження отриманих даних з PostgreSQL
 - **Візуалізація**: Google Sheets.
   
 ### Результати аналізу
-- **SQL скрипти**:  [SQL](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/sql/sql_scripts.sql) 
+- **SQL скрипти**:  [SQL](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/sql/sql_scripts.sql)
+- **Збереження отриманих даних з PostgreSQL** [data](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/tree/main/data)
 - **Dashboard**:
   [Dashboard](https://github.com/VasylBihari/Project_SQL_Bank_Churn_Modeling/blob/main/dashboard/Dashboard_screenshot.png)
